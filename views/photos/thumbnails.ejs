@@ -1,0 +1,53 @@
+<picture>
+  <!-- super-wide crop (800px < viewport) -->
+  <source
+    media="(min-width: 800px)"
+    srcset="
+      http://res.cloudinary.com/vsnair/image/upload/c_fill,ar_3:1,g_face,f_auto,q_70,w_800/photo.jpg   800w,
+      http://res.cloudinary.com/vsnair/image/upload/c_fill,ar_3:1,g_face,f_auto,q_70,w_1000/photo.jpg 1000w,
+      http://res.cloudinary.com/vsnair/image/upload/c_fill,ar_3:1,g_face,f_auto,q_70,w_1200/photo.jpg 1200w,
+      http://res.cloudinary.com/vsnair/image/upload/c_fill,ar_3:1,g_face,f_auto,q_70,w_1400/photo.jpg 1400w,
+      http://res.cloudinary.com/vsnair/image/upload/c_fill,ar_3:1,g_face,f_auto,q_70,w_1600/photo.jpg 1600w
+    "
+    sizes="100vw"
+  />
+
+  <!-- wide crop (600px ≤ viewport < 800px) -->
+  <source
+    media="(min-width: 600px)"
+    srcset="
+      http://res.cloudinary.com/vsnair/image/upload/c_fill,ar_2:1,g_face,f_auto,q_70,w_600/photo.jpg   600w,
+      http://res.cloudinary.com/vsnair/image/upload/c_fill,ar_2:1,g_face,f_auto,q_70,w_800/photo.jpg   800w,
+      http://res.cloudinary.com/vsnair/image/upload/c_fill,ar_2:1,g_face,f_auto,q_70,w_1000/photo.jpg 1000w,
+      http://res.cloudinary.com/vsnair/image/upload/c_fill,ar_2:1,g_face,f_auto,q_70,w_1200/photo.jpg 1200w,
+      http://res.cloudinary.com/vsnair/image/upload/c_fill,ar_2:1,g_face,f_auto,q_70,w_1400/photo.jpg 1400w,
+      http://res.cloudinary.com/vsnair/image/upload/c_fill,ar_2:1,g_face,f_auto,q_70,w_1600/photo.jpg 1600w
+    "
+    sizes="100vw"
+  />
+
+  <!-- standard crop (400px ≤ viewport < 600px) -->
+  <source
+    media="(min-width: 400px)"
+    srcset="
+      http://res.cloudinary.com/vsnair/image/upload/f_auto,q_70,w_400/photo.jpg  400w,
+      http://res.cloudinary.com/vsnair/image/upload/f_auto,q_70,w_600/photo.jpg  600w,
+      http://res.cloudinary.com/vsnair/image/upload/f_auto,q_70,w_800/photo.jpg  800w,
+      http://res.cloudinary.com/vsnair/image/upload/f_auto,q_70,w_800/photo.jpg 1000w,
+      http://res.cloudinary.com/vsnair/image/upload/f_auto,q_70,w_800/photo.jpg 1200w
+    "
+    sizes="100vw"
+  />
+
+  <!-- zoomed in (viewport < 400px) -->
+  <img
+    srcset="
+      http://res.cloudinary.com/vsnair/image/upload/c_thumb,g_face,w_800/f_auto,q_70,w_400/photo.jpg 400w,
+      http://res.cloudinary.com/vsnair/image/upload/c_thumb,g_face,w_800/f_auto,q_70,w_600/photo.jpg 600w,
+      http://res.cloudinary.com/vsnair/image/upload/c_thumb,g_face,w_800/f_auto,q_70,w_800/photo.jpg 800w
+    "
+    sizes="100vw"
+    src="http://res.cloudinary.com/vsnair/image/upload/c_thumb,g_face,w_800/f_auto,q_70,w_400/photo.jpg"
+    alt="President Obama on the phone in the Oval Office"
+  />
+</picture>
